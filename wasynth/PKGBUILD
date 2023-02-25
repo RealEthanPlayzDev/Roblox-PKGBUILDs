@@ -1,0 +1,22 @@
+# Maintainer: RadiatedExodus <radiatedexodus@gmail.com>
+
+pkgname="wasynth"
+pkgver="857737ff52be37ef8be283f4b357248b369cd50b"
+pkgrel=1
+pkgdesc="Wasynth is a WebAssembly translation tool and library for arbitrary languages."
+arch=("any")
+url="https://github.com/Rerumu/Wasynth"
+license=("GPL3")
+makedepends=("rust")
+source=("Wasynth-$pkgver-src.zip::https://github.com/Rerumu/Wasynth/archive/$pkgver.zip")
+sha256sums=("SKIP")
+
+build() {
+    cd "$srcdir/Wasynth-${pkgver}"
+    cargo build --release
+}
+
+package() {
+   install -Dm755 "${srcdir}/Wasynth-${pkgver}/target/release/wasm2luau" "${pkgdir}/usr/bin/wasm2luau"
+   install -Dm755 "${srcdir}/Wasynth-${pkgver}/target/release/wasm2luajit" "${pkgdir}/usr/bin/wasm2luajit"
+}
