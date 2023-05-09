@@ -1,15 +1,15 @@
 # Maintainer: RadiatedExodus <radiatedexodus@gmail.com>
 
-pkgname="rojo"
-pkgver="7.3.0"
+pkgname="rojo-upliftgames"
+pkgver="7.3.0-uplift.10"
 pkgrel=1
 pkgdesc="Rojo is a tool designed to enable Roblox developers to use professional-grade software engineering tools."
 arch=("any")
-url="https://github.com/rojo-rbx/rojo"
+url="https://github.com/UpliftGames/Rojo"
 license=("MPL2")
 makedepends=("rust")
-conflicts=("rojo-upliftgames")
-source=("git+https://github.com/rojo-rbx/rojo.git#tag=v${pkgver}")
+conflicts=("rojo")
+source=("git+https://github.com/UpliftGames/Rojo.git#tag=v${pkgver}")
 sha256sums=("SKIP")
 
 build() {
