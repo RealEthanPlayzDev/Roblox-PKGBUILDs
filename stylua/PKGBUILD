@@ -8,7 +8,7 @@ arch=("any")
 url="https://github.com/JohnnyMorganz/stylua"
 license=("MPL2")
 makedepends=("rust")
-source=("stylua-$pkgver-src.zip::https://github.com/JohnnyMorganz/stylua/archive/refs/tags/$pkgver.zip")
+source=("stylua-$pkgver-src.zip::https://github.com/JohnnyMorganz/stylua/archive/refs/tags/v$pkgver.zip")
 sha256sums=("SKIP")
 
 build() {
