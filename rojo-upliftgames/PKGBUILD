@@ -7,7 +7,7 @@ pkgdesc="Rojo is a tool designed to enable Roblox developers to use professional
 arch=("any")
 url="https://github.com/UpliftGames/Rojo"
 license=("MPL2")
-makedepends=("rust", "wally")
+makedepends=("rust" "wally")
 conflicts=("rojo")
 source=("git+https://github.com/UpliftGames/Rojo.git#tag=v${pkgver}")
 sha256sums=("SKIP")

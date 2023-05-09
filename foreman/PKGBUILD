@@ -7,7 +7,7 @@ pkgdesc="Foreman is a toolchain manager to help Roblox developers manage their i
 arch=("any")
 url="https://github.com/Roblox/foreman"
 license=("MIT")
-makedepends=("rust", "pkgconf", "openssl")
+makedepends=("rust" "pkgconf" "openssl")
 source=("foreman-$pkgver-src.zip::https://github.com/Roblox/foreman/archive/refs/tags/v$pkgver.zip")
 sha256sums=("SKIP")
 
