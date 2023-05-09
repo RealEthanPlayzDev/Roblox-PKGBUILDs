@@ -7,7 +7,7 @@ pkgdesc="Aftman is a toolchain manager. It enables installing project-specific c
 arch=("any")
 url="https://github.com/LPGhatguy/aftman"
 license=("MIT")
-makedepends=("rust")
+makedepends=("rust", "pkgconf", "openssl")
 source=("aftman-$pkgver-src.zip::https://github.com/LPGhatguy/aftman/archive/refs/tags/v$pkgver.zip")
 sha256sums=("SKIP")
 

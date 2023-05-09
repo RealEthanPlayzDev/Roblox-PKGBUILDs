@@ -7,7 +7,7 @@ pkgdesc="Wally is a package manager for Roblox inspired by Cargo (Rust) and npm 
 arch=("any")
 url="https://github.com/UpliftGames/wally"
 license=("MPL2")
-makedepends=("rust")
+makedepends=("rust", "pkgconf", "openssl")
 source=("wally-$pkgver-src.zip::https://github.com/UpliftGames/wally/archive/${pkgver}.zip")
 sha256sums=("SKIP")
 
