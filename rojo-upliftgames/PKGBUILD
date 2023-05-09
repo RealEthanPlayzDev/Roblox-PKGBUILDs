@@ -13,9 +13,9 @@ source=("git+https://github.com/UpliftGames/Rojo.git#tag=v${pkgver}")
 sha256sums=("SKIP")
 
 build() {
-    cd "$srcdir/rojo"
-    git submodule update --init --force
+    cd "$srcdir/rojo/plugin"
     wally install
+    cd "$srcdir/rojo"
     cargo build --release
 }
 
