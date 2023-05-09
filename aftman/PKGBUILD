@@ -1,0 +1,21 @@
+# Maintainer: RadiatedExodus <radiatedexodus@gmail.com>
+
+pkgname="aftman"
+pkgver="0.2.7"
+pkgrel=1
+pkgdesc="Aftman is a toolchain manager. It enables installing project-specific command line tools and switching between them seamlessly."
+arch=("any")
+url="https://github.com/LPGhatguy/aftman"
+license=("MIT")
+makedepends=("rust")
+source=("aftman-$pkgver-src.zip::https://github.com/LPGhatguy/aftman/archive/refs/tags/v$pkgver.zip")
+sha256sums=("SKIP")
+
+build() {
+    cd "$srcdir/aftman-${pkgver}"
+    cargo build --release
+}
+
+package() {
+   install -Dm755 "${srcdir}/aftman-${pkgver}/target/release/aftman" "${pkgdir}/usr/bin/aftman"
+}
