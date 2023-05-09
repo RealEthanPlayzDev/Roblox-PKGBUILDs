@@ -1,0 +1,21 @@
+# Maintainer: RadiatedExodus <radiatedexodus@gmail.com>
+
+pkgname="selene"
+pkgver="0.25.0"
+pkgrel=1
+pkgdesc="A blazing-fast modern Lua linter written in Rust"
+arch=("any")
+url="https://github.com/Kampfkarren/selene"
+license=("MPL2")
+makedepends=("rust")
+source=("selene-$pkgver-src.zip::https://github.com/Kampfkarren/selene/archive/refs/tags/$pkgver.zip")
+sha256sums=("SKIP")
+
+build() {
+    cd "$srcdir/selene-${pkgver}"
+    cargo build --release
+}
+
+package() {
+   install -Dm755 "${srcdir}/selene-${pkgver}/target/release/selene" "${pkgdir}/usr/bin/selene"
+}

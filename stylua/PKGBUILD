@@ -1,0 +1,21 @@
+# Maintainer: RadiatedExodus <radiatedexodus@gmail.com>
+
+pkgname="stylua"
+pkgver="0.17.1"
+pkgrel=1
+pkgdesc="An opinionated Lua code formatter"
+arch=("any")
+url="https://github.com/JohnnyMorganz/stylua"
+license=("MPL2")
+makedepends=("rust")
+source=("stylua-$pkgver-src.zip::https://github.com/JohnnyMorganz/stylua/archive/refs/tags/$pkgver.zip")
+sha256sums=("SKIP")
+
+build() {
+    cd "$srcdir/stylua-${pkgver}"
+    cargo build --release
+}
+
+package() {
+   install -Dm755 "${srcdir}/stylua-${pkgver}/target/release/stylua" "${pkgdir}/usr/bin/stylua"
+}

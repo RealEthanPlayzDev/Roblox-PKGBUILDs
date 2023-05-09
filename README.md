@@ -10,6 +10,10 @@ This repository contains PKGBUILDs to be used at Arch Linux systems. The PKGBUIL
 - [Lune](https://github.com/filiptibell/lune)
 - [Wasynth](https://github.com/Rerumu/Wasynth)
 - [Mantle](https://github.com/blake-mealey/mantle)
+- [selene](https://github.com/Kampfkarren/selene)
+- [StyLua](https://github.com/JohnnyMorganz/stylua)
+- [DarkLua](https://github.com/seaofvoices/darklua)
+- [luau-lsp](https://github.com/JohnnyMorganz/luau-lsp)
 
 ## Why not add these in the Arch Linux User Repository?
 - I had to switch back to Windows due to various reasons (I hope I can go back to daily-driving Arch once those reasons go away)
