@@ -7,7 +7,7 @@ pkgdesc="A standalone Luau script runtime"
 arch=("any")
 url="https://github.com/filiptibell/lune"
 license=("MPL2")
-makedepends=("rust")
+makedepends=("rust", "wally")
 source=("lune-$pkgver-src.zip::https://github.com/filiptibell/lune/archive/refs/tags/v$pkgver.zip")
 sha256sums=("SKIP")
 

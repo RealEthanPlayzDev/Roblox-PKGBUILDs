@@ -1,14 +1,14 @@
 # Maintainer: RadiatedExodus <radiatedexodus@gmail.com>
 
 pkgname="wally"
-pkgver="0.3.1"
+pkgver="58721c7e4f6a3ee1b647350d33ab39ab644e97f4"
 pkgrel=1
 pkgdesc="Wally is a package manager for Roblox inspired by Cargo (Rust) and npm (JavaScript)."
 arch=("any")
 url="https://github.com/UpliftGames/wally"
 license=("MPL2")
 makedepends=("rust")
-source=("wally-$pkgver-src.zip::https://github.com/UpliftGames/wally/archive/refs/tags/v$pkgver.zip")
+source=("wally-$pkgver-src.zip::https://github.com/UpliftGames/wally/archive/${pkgver}.zip")
 sha256sums=("SKIP")
 
 build() {

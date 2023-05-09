@@ -15,6 +15,7 @@ sha256sums=("SKIP")
 build() {
     cd "$srcdir/rojo"
     git submodule update --init --force
+    wally install
     cargo build --release
 }
 

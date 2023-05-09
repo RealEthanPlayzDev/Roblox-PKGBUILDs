@@ -1,0 +1,21 @@
+# Maintainer: RadiatedExodus <radiatedexodus@gmail.com>
+
+pkgname="mantle"
+pkgver="0.11.8"
+pkgrel=1
+pkgdesc="An infrastructure-as-code and deployment tool for Roblox."
+arch=("any")
+url="https://github.com/blake-mealey/mantle"
+license=("MIT")
+makedepends=("rust")
+source=("mantle-$pkgver-src.zip::https://github.com/blake-mealey/mantle/archive/refs/tags/v$pkgver.zip")
+sha256sums=("SKIP")
+
+build() {
+    cd "$srcdir/mantle-${pkgver}/mantle"
+    cargo build --release
+}
+
+package() {
+   install -Dm755 "${srcdir}/mantle-${pkgver}/mantle/target/release/mantle" "${pkgdir}/usr/bin/mantle"
+}
