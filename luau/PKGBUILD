@@ -1,0 +1,27 @@
+# Maintainer: RadiatedExodus <radiatedexodus@gmail.com>
+
+pkgname="luau"
+pkgver="0.575"
+pkgrel=1
+pkgdesc="A fast, small, safe, gradually typed embeddable scripting language derived from Lua"
+arch=("any")
+url="https://github.com/Roblox/luau"
+license=("MIT")
+makedepends=("cmake")
+source=("git+https://github.com/Roblox/luau.git#tag=${pkgver}")
+sha256sums=("SKIP")
+
+build() {
+    cd "$srcdir/luau"
+    mkdir -p build
+    cd build
+    cmake .. -DCMAKE_BUILD_TYPE=Release
+    cmake --build . --target Luau.Repl.CLI Luau.Analyze.CLI Luau.Ast.CLI Luau.Reduce.CLI --config Release
+}
+
+package() {
+   install -Dm755 "${srcdir}/build/Release/x64/luau" "${pkgdir}/usr/bin/luau"
+   install -Dm755 "${srcdir}/build/Release/x64/luau-analyze" "${pkgdir}/usr/bin/luau-analyze"
+   install -Dm755 "${srcdir}/build/Release/x64/luau-ast" "${pkgdir}/usr/bin/luau-ast"
+   install -Dm755 "${srcdir}/build/Release/x64/luau-reduce" "${pkgdir}/usr/bin/luau-reduce"
+}
