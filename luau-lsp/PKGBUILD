@@ -14,7 +14,7 @@ sha256sums=("SKIP")
 build() {
     cd "$srcdir/luau-lsp"
     git submodule update --init --force
-    mkdir build
+    mkdir -p build
     cd build
     cmake .. -DCMAKE_BUILD_TYPE=Release
     cmake --build . --target Luau.LanguageServer.CLI --config Release
