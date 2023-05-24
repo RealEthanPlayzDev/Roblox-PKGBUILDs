@@ -1,0 +1,21 @@
+# Maintainer: RadiatedExodus <radiatedexodus@gmail.com>
+
+pkgname="tarmac"
+pkgver="0.7.3"
+pkgrel=1
+pkgdesc="Command line asset management tool for Roblox"
+arch=("any")
+url="https://github.com/rojo-rbx/tarmac"
+license=("MIT")
+makedepends=("rust")
+source=("Tarmac-$pkgver-src.zip::https://github.com/rojo-rbx/tarmac/archive/v$pkgver.zip")
+sha256sums=("SKIP")
+
+build() {
+    cd "$srcdir/Tarmac-${pkgver}"
+    cargo build --release
+}
+
+package() {
+   install -Dm755 "${srcdir}/Tarmac-${pkgver}/target/release/tarmac" "${pkgdir}/usr/bin/tarmac"
+}
