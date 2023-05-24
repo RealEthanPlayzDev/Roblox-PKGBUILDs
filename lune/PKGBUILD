@@ -1,7 +1,7 @@
 # Maintainer: RadiatedExodus <radiatedexodus@gmail.com>
 
 pkgname="lune"
-pkgver="0.6.6"
+pkgver="0.6.7"
 pkgrel=1
 pkgdesc="A standalone Luau script runtime"
 arch=("any")
