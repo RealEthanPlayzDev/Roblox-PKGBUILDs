@@ -20,8 +20,8 @@ build() {
 }
 
 package() {
-   install -Dm755 "${srcdir}/build/luau" "${pkgdir}/usr/bin/luau"
-   install -Dm755 "${srcdir}/build/luau-analyze" "${pkgdir}/usr/bin/luau-analyze"
-   install -Dm755 "${srcdir}/build/luau-ast" "${pkgdir}/usr/bin/luau-ast"
-   install -Dm755 "${srcdir}/build/luau-reduce" "${pkgdir}/usr/bin/luau-reduce"
+   install -Dm755 "${srcdir}/luau/build/luau" "${pkgdir}/usr/bin/luau"
+   install -Dm755 "${srcdir}/luau/build/luau-analyze" "${pkgdir}/usr/bin/luau-analyze"
+   install -Dm755 "${srcdir}/luau/build/luau-ast" "${pkgdir}/usr/bin/luau-ast"
+   install -Dm755 "${srcdir}/luau/build/luau-reduce" "${pkgdir}/usr/bin/luau-reduce"
 }
