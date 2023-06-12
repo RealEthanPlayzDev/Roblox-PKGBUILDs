@@ -1,7 +1,7 @@
 # Maintainer: RadiatedExodus <radiatedexodus@gmail.com>
 
 pkgname="luau"
-pkgver="0.577"
+pkgver="0.580"
 pkgrel=1
 pkgdesc="A fast, small, safe, gradually typed embeddable scripting language derived from Lua"
 arch=("any")
@@ -16,12 +16,13 @@ build() {
     mkdir -p build
     cd build
     cmake .. -DCMAKE_BUILD_TYPE=Release
-    cmake --build . --target Luau.Repl.CLI Luau.Analyze.CLI Luau.Ast.CLI Luau.Reduce.CLI --config Release
+    cmake --build . --target Luau.Repl.CLI Luau.Analyze.CLI Luau.Compile.CLI Luau.Ast.CLI Luau.Reduce.CLI --config Release
 }
 
 package() {
    install -Dm755 "${srcdir}/luau/build/luau" "${pkgdir}/usr/bin/luau"
    install -Dm755 "${srcdir}/luau/build/luau-analyze" "${pkgdir}/usr/bin/luau-analyze"
+   install -Dm755 "${srcdir}/luau/build/luau-compile" "${pkgdir}/usr/bin/luau-compile"
    install -Dm755 "${srcdir}/luau/build/luau-ast" "${pkgdir}/usr/bin/luau-ast"
    install -Dm755 "${srcdir}/luau/build/luau-reduce" "${pkgdir}/usr/bin/luau-reduce"
 }
