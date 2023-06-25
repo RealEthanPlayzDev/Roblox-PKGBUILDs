@@ -1,7 +1,7 @@
 # Maintainer: RadiatedExodus <radiatedexodus@gmail.com>
 
 pkgname="wasynth"
-pkgver="857737ff52be37ef8be283f4b357248b369cd50b"
+pkgver="460363bff151cc60fcc83601848c96c928038abb"
 pkgrel=1
 pkgdesc="Wasynth is a WebAssembly translation tool and library for arbitrary languages."
 arch=("any")
