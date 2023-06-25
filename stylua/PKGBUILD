@@ -1,7 +1,7 @@
 # Maintainer: RadiatedExodus <radiatedexodus@gmail.com>
 
 pkgname="stylua"
-pkgver="0.17.1"
+pkgver="0.18.0"
 pkgrel=1
 pkgdesc="An opinionated Lua code formatter"
 arch=("any")
