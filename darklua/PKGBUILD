@@ -8,7 +8,7 @@ arch=("any")
 url="https://github.com/seaofvoices/darklua"
 license=("MIT")
 makedepends=("rust")
-source=("darklua-$pkgver-src.zip::https://github.com/seaofvoices/darklua/archive/refs/tag/$pkgver.zip")
+source=("darklua-$pkgver-src.zip::https://github.com/seaofvoices/darklua/archive/refs/tags/v$pkgver.zip")
 sha256sums=("SKIP")
 
 build() {
