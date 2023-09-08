@@ -1,7 +1,7 @@
 # Maintainer: RadiatedExodus <radiatedexodus@gmail.com>
 
 pkgname="wally"
-pkgver="58721c7e4f6a3ee1b647350d33ab39ab644e97f4"
+pkgver="ea536c5521fc514d7e6112d7037d8f18aae2f285"
 pkgrel=1
 pkgdesc="Wally is a package manager for Roblox inspired by Cargo (Rust) and npm (JavaScript)."
 arch=("any")

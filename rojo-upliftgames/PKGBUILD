@@ -1,7 +1,7 @@
 # Maintainer: RadiatedExodus <radiatedexodus@gmail.com>
 
 pkgname="rojo-upliftgames"
-pkgver="7.3.0-uplift.10"
+pkgver="7.3.0-uplift.11"
 pkgrel=1
 pkgdesc="Rojo is a tool designed to enable Roblox developers to use professional-grade software engineering tools."
 arch=("any")

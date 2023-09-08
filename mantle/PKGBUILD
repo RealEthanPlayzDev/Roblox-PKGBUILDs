@@ -1,7 +1,7 @@
 # Maintainer: RadiatedExodus <radiatedexodus@gmail.com>
 
 pkgname="mantle"
-pkgver="0.11.8"
+pkgver="0.11.10"
 pkgrel=1
 pkgdesc="An infrastructure-as-code and deployment tool for Roblox."
 arch=("any")

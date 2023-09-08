@@ -1,7 +1,7 @@
 # Maintainer: RadiatedExodus <radiatedexodus@gmail.com>
 
 pkgname="darklua"
-pkgver="0.9.0"
+pkgver="0.10.2"
 pkgrel=1
 pkgdesc="A command line tool that transforms Lua code"
 arch=("any")
