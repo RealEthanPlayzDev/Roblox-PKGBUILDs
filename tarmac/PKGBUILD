@@ -1,7 +1,7 @@
 # Maintainer: RadiatedExodus <radiatedexodus@gmail.com>
 
 pkgname="tarmac"
-pkgver="0.7.3"
+pkgver="0.7.5"
 pkgrel=1
 pkgdesc="Command line asset management tool for Roblox"
 arch=("any")

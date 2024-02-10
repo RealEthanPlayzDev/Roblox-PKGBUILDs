@@ -1,7 +1,7 @@
 # Maintainer: RadiatedExodus <radiatedexodus@gmail.com>
 
 pkgname="foreman"
-pkgver="1.1.0"
+pkgver="1.5.0"
 pkgrel=1
 pkgdesc="Foreman is a toolchain manager to help Roblox developers manage their installations of tools like Rojo, Remodel, Tarmac, DarkLua, StyLua, and Selene."
 arch=("any")

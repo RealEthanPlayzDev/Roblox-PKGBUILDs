@@ -20,7 +20,7 @@ UpliftGames's Rojo fork has been also removed, as far as I'm concerned, all of t
 - [StyLua](https://github.com/JohnnyMorganz/stylua)
 - [DarkLua](https://github.com/seaofvoices/darklua)
 - [luau-lsp](https://github.com/JohnnyMorganz/luau-lsp)
-- [luau](https://github.com/Roblox/luau) (All CLI executables - Repl, Analyze, Ast, Reduce)
+- [luau](https://github.com/Roblox/luau) (All CLI executables - Repl, Analyze, Compile, Ast, Reduce)
 - [Tarmac](https://github.com/rojo-rbx/tarmac)
 
 ## Why not add these in the Arch Linux User Repository?
